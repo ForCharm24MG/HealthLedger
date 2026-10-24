@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-10-24 20:43:37",
+  "total_tests": 16,
+  "passed_tests": 16,
+  "success_rate": "100.0%",
+  "test_cases": [
+    {
+      "id": "TC-01",
+      "name": "Participant Registration & PBKDF2 Salted Hashing",
+      "category": "Identity & Key Mgmt",
+      "latency": "140.36 ms",
+      "status": "PASS",
+      "details": "Registered patient & physician with salted PBKDF2 hash & RSA-2048 keypairs"
+    },
+    {
+      "id": "TC-02",
+      "name": "Credential Verification & Constant-Time Auth",
+      "category": "Authentication",
+      "latency": "58.73 ms",
+      "status": "PASS",
+      "details": "Accepted valid password, rejected invalid password in constant time"
+    },
+    {
+      "id": "TC-03",
+      "name": "AES-256-GCM Payload Encryption & Nonce",
+      "category": "Cryptography",
+      "latency": "0.44 ms",
+      "status": "PASS",
+      "details": "Encrypted 67 bytes with 96-bit unique CSPRNG nonce"
+    },
+    {
+      "id": "TC-04",
+      "name": "AES-256-GCM Authenticated Decryption",
+      "category": "Cryptography",
+      "latency": "0.02 ms",
+      "status": "PASS",
+      "details": "Decrypted ciphertext restores original clinical payload byte-for-byte"
+    },
+    {
+      "id": "TC-05",
+      "name": "RSA-2048 OAEP Key Encapsulation",
+      "category": "Key Exchange",
+      "latency": "0.62 ms",
+      "status": "PASS",
+      "details": "Encapsulated 256-bit AES key using physician RSA public key (OAEP)"
+    },
+    {
+      "id": "TC-06",
+      "name": "RSA-2048 OAEP Key Decapsulation",
+      "category": "Key Exchange",
+      "latency": "34.97 ms",
+      "status": "PASS",
+      "details": "Decapsulated AES key matches original session key with zero entropy loss"
+    },
+    {
+      "id": "TC-07",
+      "name": "RSA-PSS Digital Signature & Non-Repudiation",
+      "category": "Digital Signatures",
+      "latency": "34.77 ms",
+      "status": "PASS",
+      "details": "Generated & verified RSA-PSS signature; rejected tampered data string"
+    },
+    {
+      "id": "TC-08",
+      "name": "Off-Chain CAS Write & Content Addressing",
+      "category": "Storage Layer",
+      "latency": "1.44 ms",
+      "status": "PASS",
+      "details": "Persisted to off-chain CAS with SHA-256 CID: 95c6d64e4837caa4..."
+    },
+    {
+      "id": "TC-09",
+      "name": "CAS Storage Tamper Detection (Bit-Flip Test)",
+      "category": "Data Integrity",
+      "latency": "1.31 ms",
+      "status": "PASS",
+      "details": "Corrupted on-disk payload immediately detected and rejected by SHA-256 check"
+    },
+    {
+      "id": "TC-10",
+      "name": "Consortium Block Mining & Hash Chain Integrity",
+      "category": "Ledger Layer",
+      "latency": "2.26 ms",
+      "status": "PASS",
+      "details": "Mined Block #1 with verified SHA-256 cryptographic linkage"
+    },
+    {
+      "id": "TC-11",
+      "name": "Dynamic Time-Locked Consent Minting",
+      "category": "Access Control",
+      "latency": "21.41 ms",
+      "status": "PASS",
+      "details": "Active 24-hr consent with digital signature successfully authorized by ledger"
+    },
+    {
+      "id": "TC-12",
+      "name": "Authorized Record Access & Audit Logging",
+      "category": "Audit Trails",
+      "latency": "10.23 ms",
+      "status": "PASS",
+      "details": "Successful access event permanently recorded to blockchain audit trail"
+    },
+    {
+      "id": "TC-13",
+      "name": "Instant Zero-Reencryption Revocation O(1)",
+      "category": "Access Control",
+      "latency": "12.50 ms",
+      "status": "PASS",
+      "details": "Revoked physician immediately blocked by ledger state in O(1) time"
+    },
+    {
+      "id": "TC-14",
+      "name": "Unauthorized Access Intrusion Logging",
+      "category": "Audit Trails",
+      "latency": "9.89 ms",
+      "status": "PASS",
+      "details": "Unauthorized attempt permanently recorded on ledger for patient forensics"
+    },
+    {
+      "id": "TC-15",
+      "name": "Negative Test: Forged Signature Rejection",
+      "category": "Digital Signatures",
+      "latency": "1.04 ms",
+      "status": "PASS",
+      "details": "Forged RSA-PSS signature strictly rejected on transaction pool ingestion"
+    },
+    {
+      "id": "TC-16",
+      "name": "Negative Test: Expired & Unauthorized Gatekeeping",
+      "category": "Access Control",
+      "latency": "12.03 ms",
+      "status": "PASS",
+      "details": "Unconsented and expired time-locks deterministically rejected by gatekeeper"
+    }
+  ]
+}

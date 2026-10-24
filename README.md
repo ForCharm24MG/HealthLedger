@@ -1,0 +1,143 @@
+# HealthLedger: Privacy-Preserving Healthcare Data Sharing Using Blockchain
+
+**M.Sc. Information Technology (M.Sc. IT) Research Project & System Implementation**  
+**Course Code:** RPSRPIT0605 | **Semester:** III | **Academic Year:** 2026–27  
+**Department of Computer Science & Information Technology**  
+**S.P. Mandali’s Ramnarain Ruia Autonomous College, Matunga, Mumbai - 400019**  
+**Internal Guide:** Mahavir Advaya  
+**Submitted By:** Manish Ghag (Roll No. 603)  
+
+---
+
+## 1. Overview
+
+HealthLedger is an end-to-end, privacy-preserving healthcare information exchange platform. It resolves the core trilemma of medical data sharing—**confidentiality**, **inter-institutional accessibility**, and **storage scalability**—by combining:
+
+1. **Client-Side Authenticated Hybrid Cryptography**:
+   - High-throughput symmetric file encryption via **AES-256-GCM** (NIST SP 800-38D, 96-bit CSPRNG nonces, 128-bit authentication tags).
+   - Asymmetric Key Encapsulation Mechanism (**RSA-2048 OAEP** with SHA-256/MGF1) for secure session key transmission to designated attending physicians.
+   - Non-repudiable digital signatures via **RSA-2048 PSS**.
+2. **Content-Addressable Off-Chain Storage (CAS)**:
+   - Stores encrypted diagnostic records off-chain under SHA-256 Content Identifiers (CIDs) with on-read bit-flip tamper detection.
+   - Prevents ledger bloat and slashes smart contract gas costs by **89.8%**.
+3. **Consortium Blockchain Ledger Engine**:
+   - Single-node Proof-of-Authority (PoA) blockchain prototype with persistent JSON storage (`blockchain_ledger.json`).
+   - Cryptographic SHA-256 sequential block chaining, dynamic time-locked consent expiration, and instant zero-reencryption permission revocation $O(1)$.
+4. **PyQt5 Desktop Hospital Workstations**:
+   - Clinical dual-portal workstation featuring dedicated Patient Consent Workspaces and Physician Diagnostic Review consoles.
+   - Real-time multi-terminal synchronization and live blockchain ledger inspection.
+
+---
+
+## 2. Directory Structure
+
+```
+HealthLedger/
+│
+├── gui_app.py                 # Main PyQt5 Desktop Hospital Application
+├── blockchain.py              # Consortium Blockchain engine with JSON persistence
+├── database.py                # SQLite database & RSA-2048 keypair management
+├── crypto_utils.py            # AES-256-GCM and RSA-2048 cryptographic primitives
+├── storage.py                 # Off-chain Content-Addressable Storage (CAS) manager
+├── test_suite.py              # 16-Test Automated Functional & Security Suite
+├── benchmark_experiments.py   # Latency & throughput empirical benchmarking engine
+├── seed_healthcare_data.py    # Seeds realistic clinical diagnostic records & accounts
+│
+├── blockchain_ledger.json     # Persistent JSON blockchain state file
+├── healthcare.db              # SQLite database with registered hospital nodes & users
+│
+├── offchain_storage/          # Directory storing encrypted CAS payloads by CID
+├── experiments/               # Empirical benchmark data, JSON logs, and charts
+├── screenshots/               # Application UI figures and workstation captures
+│
+├── run_app.bat                # Windows double-click launcher for Desktop GUI
+├── run_tests.bat              # Windows double-click runner for Test Suite
+├── requirements.txt           # Project dependencies (PyQt5, cryptography, etc.)
+└── README.md                  # System documentation and execution guide
+```
+
+---
+
+## 3. Installation & Setup
+
+### Prerequisites
+- Python 3.9+ (64-bit recommended)
+- Windows 10 / 11
+
+### Step 1: Install Dependencies
+Open a command prompt in this directory and execute:
+```bash
+pip install -r requirements.txt
+```
+*(Dependencies: `PyQt5`, `cryptography`, `matplotlib`, `numpy`, `pycryptodome`, `pypdf`, `reportlab`)*
+
+---
+
+## 4. How to Run
+
+### Option A: Using Windows Launcher Scripts (Easiest)
+- Double-click **`run_app.bat`** to start the desktop hospital application.
+- Double-click **`run_tests.bat`** to execute the 16-test verification suite.
+
+### Option B: Using Command Line
+
+#### 1. Launch the Desktop Application
+```bash
+python gui_app.py
+```
+*(or `python main.py`)*
+
+#### 2. Run the Automated Verification Test Suite
+```bash
+python test_suite.py
+```
+
+#### 3. Run Performance Benchmarks
+```bash
+python benchmark_experiments.py
+```
+
+#### 4. Reseed Default Clinical Data (Optional)
+```bash
+python seed_healthcare_data.py
+```
+
+---
+
+## 5. Demo Accounts & Credentials
+
+The pre-initialized database (`healthcare.db`) contains the following sample accounts:
+
+| Username | Role | Default Password | Department / Hospital |
+| :--- | :--- | :--- | :--- |
+| `alice_smith` | Patient | `Password@123` | Metro General Hospital |
+| `manish_ghag` | Patient | `Password@123` | City General Health Center |
+| `dr_bob` | Doctor | `Password@123` | Interventional Cardiology, Metro Heart Center |
+| `dr_clara` | Doctor | `Password@123` | Consultant Neurology, Apex Neuro Specialty Clinic |
+
+*(You can also register new Patients or Physicians directly using the Registration tab on the login screen.)*
+
+---
+
+## 6. Verification Test Suite (16/16 Tests Passing)
+
+Execute `python test_suite.py` to run all 16 automated functional and security tests:
+
+- **TC-01**: Participant Registration & PBKDF2 Salted Hashing
+- **TC-02**: Credential Verification & Constant-Time Auth
+- **TC-03**: AES-256-GCM Payload Encryption & Nonce
+- **TC-04**: AES-256-GCM Authenticated Decryption
+- **TC-05**: RSA-2048 OAEP Key Encapsulation
+- **TC-06**: RSA-2048 OAEP Key Decapsulation
+- **TC-07**: RSA-PSS Digital Signature & Non-Repudiation
+- **TC-08**: Off-Chain CAS Write & Content Addressing
+- **TC-09**: CAS Storage Tamper Detection (Bit-Flip Test)
+- **TC-10**: Consortium Block Mining & Hash Chain Integrity
+- **TC-11**: Dynamic Time-Locked Consent Minting
+- **TC-12**: Authorized Record Access & Audit Logging
+- **TC-13**: Instant Zero-Reencryption Revocation $O(1)$
+- **TC-14**: Unauthorized Access Intrusion Logging
+- **TC-15**: Negative Test: Forged Signature Rejection
+- **TC-16**: Negative Test: Expired & Unauthorized Gatekeeping
+
+**Result: 16/16 Tests Passed (100.0% Success Rate).**

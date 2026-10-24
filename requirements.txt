@@ -1,0 +1,8 @@
+# HealthLedger Core Dependencies
+PyQt5>=5.15.0
+cryptography>=3.4.8
+matplotlib>=3.3.0
+numpy>=1.19.0
+python-docx>=0.8.11
+pypdf>=3.0.0
+pycryptodome>=3.18.0
