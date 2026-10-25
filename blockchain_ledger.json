@@ -2,161 +2,17 @@
   "chain": [
     {
       "index": 0,
-      "timestamp": 1792854812.984269,
+      "timestamp": 1792899515.2546196,
       "transactions": [
         {
           "info": "Genesis Block - Healthcare Consortium Ledger",
-          "timestamp": 1792854812.984269
+          "timestamp": 1792899515.2546196
         }
       ],
       "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-      "hash": "c53ab54bf36e08db0d0e6a31824fb9eb0cf413e2c652759bdcc1a4b9bb4e6df1"
-    },
-    {
-      "index": 1,
-      "timestamp": 1792854812.989579,
-      "transactions": [
-        {
-          "action": "ADD_RECORD",
-          "patient_id": "alice_smith",
-          "record_id": "REC-CAR-2026-001",
-          "content_hash": "d2de7b908bc5dbdd00a49dbdc6bb4ef1b90b1117d6e9c58bb623e4b3a28734e3",
-          "data_hash": "ae264578fe7baf5ec0aa5cb8d4cc309bf85b1368456c811cb4f11fc873ad98ae",
-          "record_type": "Cardiology",
-          "signature": "abb1377e7b3f72d52986f87f4ee8e73c1da77edf8825d647c73426d62b10b402a2053ea4cbdaa39b21c99251c3550bbe38c14b751120c0175430817fe35c32c4b7fbd6e16cb11ba6166111cbd740e59a47b34b7da45c5488e574c43c5456da3a84daf6191788f2b400863eb3b4a955a44f199387cc28bf6a65d4ee490b443ae1826f97f9e7874e204f91471ab778597f98f6d7cfbf6109152d86c53b7f4c4316a8198e2660dd7dc3db54f7af413e6a8a594162bb3f9e65f2cdf648e2db333cc29582a0f5d3bf093545b3bb768841d33c73372a934710f3cd7495469e4f07cb13022368e58633251dd8af8b237991c020c611c5eaec29ca31c286d8094124c9e5",
-          "timestamp": 1792854812.989579
-        }
-      ],
-      "previous_hash": "c53ab54bf36e08db0d0e6a31824fb9eb0cf413e2c652759bdcc1a4b9bb4e6df1",
-      "hash": "d74657729c131961066558573b6f7d8e5a1fccbf8327b20f1d190ca3d7354ae9"
-    },
-    {
-      "index": 2,
-      "timestamp": 1792854813.0008104,
-      "transactions": [
-        {
-          "action": "ADD_RECORD",
-          "patient_id": "alice_smith",
-          "record_id": "REC-NEU-2026-002",
-          "content_hash": "021cf6fc593208fa0f8eb0c9697b73951711b05e29f2a9c3c233c78636746ae7",
-          "data_hash": "36881edcc5024524e8c4c916333c82b5c2d4cdce39d386cf6bb44f0f9273401c",
-          "record_type": "Neurology",
-          "signature": "bf1f0580893493f70dd0d4e86a38ceb115e3982e42beb329483375778c758eb1c50edb789a0420ae188dcaad2121b8b4031d063026ae5ae2f5900f3e199d0e527e736f120ce05aac6b32a6f281263199c5ac75d4dffb4352a43672d455221376a6dc5afb5ab8b3cccb5ff675005b5a75672031c5ffa615d256b16dc8e7113eb90e703f205f8bfe7620cae24e7ad1c7261fecd3febcbcccbc54d03f3a939560947a411ec23ca643543a3ac3456b0bd8d2ec1a47ba7badc412af40ac922296853ee882e8885dfd16ba26739b671111983d3bafd14e2b6e9f65931eb6251f5463e4936231b11c8a159afe27de0216914a714e2f5a2f34ff7c84498ba872b6fe7807",
-          "timestamp": 1792854813.0008104
-        }
-      ],
-      "previous_hash": "d74657729c131961066558573b6f7d8e5a1fccbf8327b20f1d190ca3d7354ae9",
-      "hash": "5140c5e17ce014dd37e8bebe73b90f1ed4153f5241adbcfb0a078c092d5b0f0c"
-    },
-    {
-      "index": 3,
-      "timestamp": 1792854813.0123172,
-      "transactions": [
-        {
-          "action": "ADD_RECORD",
-          "patient_id": "manish_ghag",
-          "record_id": "REC-LAB-2026-003",
-          "content_hash": "3c2916e93742b34b8222939b145f9b5380e88f60bca43bfb6b67730d7085f280",
-          "data_hash": "c091f3d66b0fc9d06319f16be9fa6c79253c37f4e478d00b326ae22587ab57ad",
-          "record_type": "Pathology",
-          "signature": "09a94230047bb95573026dd4aff61f516f336d25db384ac63c37d985867a5010fde0c859a48b43a8db03602ebd78ec0425b7e996a9bf64ed5381237bf1e9f7c1c805ea23905106837e744e35221e1ad1ca830abd875367d4cf20127c9ea37a21faf4b5d8ae6c74a8b1023c878ebf74b5dbb58cf374c68fca454c0f740504ca03e3c10c90cce77006f2809dcd28162acb2ff8b049ed23197df66ceeec558a72cf60310e0e17dedccf7b63f180f3decab1d54dc56292da4763a93cc0c30c1b6a75c67cd6d26865f5632eb9461d05d6ec3ea7de4661858906358e7f31f1210912876b0f1bc95e138507a2be17b984a7aee86e8c0fa6af497768819059140721293a",
-          "timestamp": 1792854813.0123172
-        }
-      ],
-      "previous_hash": "5140c5e17ce014dd37e8bebe73b90f1ed4153f5241adbcfb0a078c092d5b0f0c",
-      "hash": "c8f8a2cb044d002be1786c805ba91b0160105e0f23210422af95bafa72084f98"
-    },
-    {
-      "index": 4,
-      "timestamp": 1792854813.022452,
-      "transactions": [
-        {
-          "action": "ADD_RECORD",
-          "patient_id": "aman_gupta",
-          "record_id": "REC-ORT-2026-004",
-          "content_hash": "911893b5132b89ee8d26fc9ca02a587c23230e8e9c83dd878cdd54393a8da465",
-          "data_hash": "6576e5dfce8c9b47549278d932dd81f4344c023fb37e9a93e4550014bf277609",
-          "record_type": "Surgery",
-          "signature": "7537d2ed51c07e9430901c08f1041d748e99f76ded2ab7a05fe9dacda44f548aa91c635d01c7fdc04d8fbb76f7e7f497508ed98c1f0a5930042f89e3dc59d58eb326a327ec2558f20a16caa29466ea7fa719ad96b1da7dee07ee5fd3ed569bc48f64d094db3dd29b906453d0ce5ca9a6e2c60dab17c1e401ed8abc68a38b2829538b19c755af804c85ce905a1692fd4ef13634926bd6881732c043aec3736489b579c53790048793ef3362509bbd3bfcd8b1513eff1595aaf35b7a5fe7addf0ea4a9e4e33c03f5b3e7c41726ea1f95df2c0087e583dde271bac28545fab6394ffc05ab51403829147c0ba2557d911e3654f21a09d07e45e072676a3e2fb66f35",
-          "timestamp": 1792854813.022452
-        }
-      ],
-      "previous_hash": "c8f8a2cb044d002be1786c805ba91b0160105e0f23210422af95bafa72084f98",
-      "hash": "b68fd0871a7e21805442d4bef2ed1130f126d384a6413ee59e4b303f77c26566"
-    },
-    {
-      "index": 5,
-      "timestamp": 1792854813.033382,
-      "transactions": [
-        {
-          "action": "GRANT_CONSENT",
-          "patient_id": "alice_smith",
-          "record_id": "REC-CAR-2026-001",
-          "doctor_id": "dr_bob",
-          "valid_until": 1792941213.033382,
-          "signature": "be5750747fade3be7bd893b7bf264dd8322dc205c1810c29612427ec549d0d91babe55f10380a0b539ca74f6607bb4efc170521d088e61d6c01a159b453b31f4f59b8ad19821599afc384fb6499977a16b891c7ae02c1d3fb1705a880737e4dc366b8a6aa7cbc2adca2e965600a6301dea748ac43616654f9b6fb1d15e1e9f65cf70bef9a8de66c0823e2b77c91d5a25fbe2c4d480a127a5f83e503a18f2d5168059c362510eb46a26ac93b6cc7624c1e95ec8380a5d8f337b57e96a5720465cfc8c1a9520ccdda428ddb75b0622a2c5a74cf95d439d97398a4133a7f8c0f2806231dcf25943aef29a94947b920095ed6b398b9bff9c630f2b8e3407cc1b66df",
-          "timestamp": 1792854813.033382
-        }
-      ],
-      "previous_hash": "b68fd0871a7e21805442d4bef2ed1130f126d384a6413ee59e4b303f77c26566",
-      "hash": "f5311cdce3c261480a03becd5490b6aaff03169810c7f1d1bca3e033f0f904fb"
-    },
-    {
-      "index": 6,
-      "timestamp": 1792854813.0349474,
-      "transactions": [
-        {
-          "action": "ACCESS_RECORD",
-          "patient_id": "alice_smith",
-          "record_id": "REC-CAR-2026-001",
-          "doctor_id": "dr_bob",
-          "status": "AUTHORIZED_ACCESS",
-          "timestamp": 1792854813.0349474
-        }
-      ],
-      "previous_hash": "f5311cdce3c261480a03becd5490b6aaff03169810c7f1d1bca3e033f0f904fb",
-      "hash": "fb4b08c1b8bdb0583c3ee258ea4ffa7f3e9d51152d8da8e68324fd3d477c4618"
-    },
-    {
-      "index": 7,
-      "timestamp": 1792854813.0369735,
-      "transactions": [
-        {
-          "action": "GRANT_CONSENT",
-          "patient_id": "manish_ghag",
-          "record_id": "REC-LAB-2026-003",
-          "doctor_id": "dr_clara",
-          "valid_until": 1793027613.0369735,
-          "signature": "baa6a9b7d86ae99d91026fcb0b43051d7eef7df95fa5d5a138e1755522bc9d6d57eb3f76c5b21de8b94de2cac3c4f70ff063c8bcc0bfd46c2fab24eded387f1cb3fe48011de1c5b9195bdb104ac4c467c2a6a175f373a4647592b23db48f598cea85e57f8d17516e1d1ab5d878ebbfbc3764d97a218e1c6a4f36cbfb3ce1fb2c44cfeec9d6c624fc630da64cde7b4e900636be9607f755a181f81b41e969fd4eb6b09eafbc506243ad7edc88579971aa656ca2e61966632bcee5eb8d98a5e0905493783871ad98dcfd8c10a5e29b9c7c28334714d91a3c368eaf8fa90e23093f04d8f91befc6dee19ac12a3d6dac7cc6b5cc2d50c547aa702a057fefabbd7c7c",
-          "timestamp": 1792854813.0369735
-        }
-      ],
-      "previous_hash": "fb4b08c1b8bdb0583c3ee258ea4ffa7f3e9d51152d8da8e68324fd3d477c4618",
-      "hash": "f1df7adc7f847583e6448ac279072f86346f3acdc8f1609adbba8e1b80db6a1d"
+      "hash": "a25c28a50a16f8357017afa053914a56ed76f53b2f31ce0334848ca932df05fc"
     }
   ],
-  "permissions": {
-    "alice_smith::REC-CAR-2026-001::dr_bob": {
-      "valid_until": 1792941213.033382,
-      "encrypted_key": "0b7e5b63a91d78e67481d6fcf93257f4229bfbba6602d549ab0ed822033159cef47d7a6a9eb1bdcab7103f4a1c99f6122ef49410bfb9fdf4d00f527759645e06ec67577680848e3c9037912bf3afcc75ffb181dec4e9ed99707b6f0acf33acbd863fb420456228a566e01583435dace5b39401db1dfcf27026ecbff66716c559d40ecd2b7f0c3a18bfa1e462ad56acc4abf78e05948dd82a7039fcc592abffe094044296b0df064406a4f911124820dc8fa5a60aa9375167c936b002df48d34e9dee1c44f995e0d019590f209981aaacdc1c685de81d8e35e60ee0afbb289bc7fd894292483b42fdc2dc2ce5b0b95cdd2aaff0ae41780c4e896bf34df14a9c77",
-      "active": true,
-      "signature": "be5750747fade3be7bd893b7bf264dd8322dc205c1810c29612427ec549d0d91babe55f10380a0b539ca74f6607bb4efc170521d088e61d6c01a159b453b31f4f59b8ad19821599afc384fb6499977a16b891c7ae02c1d3fb1705a880737e4dc366b8a6aa7cbc2adca2e965600a6301dea748ac43616654f9b6fb1d15e1e9f65cf70bef9a8de66c0823e2b77c91d5a25fbe2c4d480a127a5f83e503a18f2d5168059c362510eb46a26ac93b6cc7624c1e95ec8380a5d8f337b57e96a5720465cfc8c1a9520ccdda428ddb75b0622a2c5a74cf95d439d97398a4133a7f8c0f2806231dcf25943aef29a94947b920095ed6b398b9bff9c630f2b8e3407cc1b66df"
-    },
-    "manish_ghag::REC-LAB-2026-003::dr_clara": {
-      "valid_until": 1793027613.0369735,
-      "encrypted_key": "5ba2e1ba1725a37f6dd5414c92b42c323c422630387d5d8d4065f657c552c1f3ae01ac071e2c7349c5f725443afe125a3cafb7a755dbe516f52f85244c17f5c03d9ea28e59db23eb8645173da21b179bf59970ade8d8e7ab5594537761b6e7280c0dac23a78b9a0c809301ba1d6266ceefe35efb600f96cd93bdb8479da23203096edff2da23ffefd0e555799df89fb116db5ea84c7bb938271dcb355a62b6908e6e4c06257185b453560e65b2eb74797dc4a866d493b8661289700c481518eb060dc8e1c322df3ec2695b400fe30031283a24730e388a395b726afb4de09a811424018c1eac5e23d6d45d2514afcaac62c2e8709b622df98c2a4a666de77ef8",
-      "active": true,
-      "signature": "baa6a9b7d86ae99d91026fcb0b43051d7eef7df95fa5d5a138e1755522bc9d6d57eb3f76c5b21de8b94de2cac3c4f70ff063c8bcc0bfd46c2fab24eded387f1cb3fe48011de1c5b9195bdb104ac4c467c2a6a175f373a4647592b23db48f598cea85e57f8d17516e1d1ab5d878ebbfbc3764d97a218e1c6a4f36cbfb3ce1fb2c44cfeec9d6c624fc630da64cde7b4e900636be9607f755a181f81b41e969fd4eb6b09eafbc506243ad7edc88579971aa656ca2e61966632bcee5eb8d98a5e0905493783871ad98dcfd8c10a5e29b9c7c28334714d91a3c368eaf8fa90e23093f04d8f91befc6dee19ac12a3d6dac7cc6b5cc2d50c547aa702a057fefabbd7c7c"
-    }
-  },
-  "access_logs": [
-    {
-      "action": "ACCESS_RECORD",
-      "patient_id": "alice_smith",
-      "record_id": "REC-CAR-2026-001",
-      "doctor_id": "dr_bob",
-      "status": "AUTHORIZED_ACCESS",
-      "timestamp": 1792854813.0349474
-    }
-  ]
+  "permissions": {},
+  "access_logs": []
 }
