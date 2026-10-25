@@ -81,3 +81,4 @@ python gui_app.py
 ```
 *(or `python main.py`)*
 
+<img width="1516" height="749" alt="figure_6_1_login" src="https://github.com/user-attachments/assets/c13be029-5256-446a-a6df-7e206a38230b" />
